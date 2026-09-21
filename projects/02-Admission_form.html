@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+
+<body bgcolor="MistyRose">
+
+
+<!-- ==================== MAIN HEADING ==================== -->
+
+<center>
+
+    <h1>Samrat Ashok Computer Institute</h1>
+
+    <h2>Student Admission & Registration Form</h2>
+
+</center>
+
+
+<form action="thankyou.html" method="post">
+
+
+<!-- ==================== PERSONAL DETAILS ==================== -->
+
+<center>
+
+<fieldset style="width:700px;">
+
+    <legend>
+        <b>1. Personal Details</b>
+    </legend>
+
+
+    <table align="center" width="680" cellpadding="8">
+
+
+        <tr>
+
+            <td width="30%">
+                Application No. :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="application_no"
+                    value="ADM2026-001"
+                    size="45"
+                    readonly
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Student Name :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="first_name"
+                    placeholder="First Name"
+                    size="19"
+                    required
+                >
+
+                -
+
+                <input
+                    type="text"
+                    name="last_name"
+                    placeholder="Last Name"
+                    size="19"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Father's Name :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="father_name"
+                    placeholder="Enter father's name"
+                    size="45"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Mother's Name :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="mother_name"
+                    placeholder="Enter mother's name"
+                    size="45"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Date of Birth :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="day"
+                    placeholder="DD"
+                    size="02"
+                >
+
+                -
+
+                <input
+                    type="text"
+                    name="month"
+                    placeholder="MM"
+                    size="2"
+                >
+
+                -
+
+                <input
+                    type="text"
+                    name="year"
+                    placeholder="YYYY"
+                    size="05"
+                >
+
+                &nbsp;
+
+                <i>(DD-MM-YYYY)</i>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Gender :
+            </td>
+
+            <td>
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                    checked
+                >
+
+                Male
+
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                >
+
+                Female
+
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Other"
+                >
+
+                Other
+
+            </td>
+
+        </tr>
+
+
+    </table>
+
+</fieldset>
+
+</center>
+
+
+<br>
+
+
+<!-- ==================== CONTACT DETAILS ==================== -->
+
+<center>
+
+<fieldset style="width:700px;">
+
+    <legend>
+        <b>2. Contact Details</b>
+    </legend>
+
+
+    <table align="center" width="680" cellpadding="8">
+
+
+        <tr>
+
+            <td width="30%">
+                Mobile No. :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    value="+91"
+                    size="2"
+                    readonly
+                >
+
+                -
+
+                <input
+                    type="number"
+                    name="mobile"
+                    placeholder="Enter mobile number"
+                    size="35"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Email ID :
+            </td>
+
+            <td>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter email address"
+                    size="45"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Password :
+            </td>
+
+            <td>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Create password"
+                    size="45"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                City :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="city"
+                    placeholder="Enter your city"
+                    size="45"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                State :
+            </td>
+
+            <td>
+
+                <select name="state">
+
+                    <option value="">
+                        -- Select State --
+                    </option>
+
+                    <option value="Uttar Pradesh">
+                        Uttar Pradesh
+                    </option>
+
+                    <option value="Madhya Pradesh">
+                        Madhya Pradesh
+                    </option>
+
+                    <option value="Delhi">
+                        Delhi
+                    </option>
+
+                    <option value="Bihar">
+                        Bihar
+                    </option>
+
+                    <option value="Rajasthan">
+                        Rajasthan
+                    </option>
+
+                    <option value="Maharashtra">
+                        Maharashtra
+                    </option>
+
+                </select>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Complete Address :
+            </td>
+
+            <td>
+
+                <textarea
+                    name="address"
+                    cols="45"
+                    rows="5"
+                    placeholder="Enter your complete address"
+                    required
+                ></textarea>
+
+            </td>
+
+        </tr>
+
+
+    </table>
+
+</fieldset>
+
+</center>
+
+
+<br>
+
+
+<!-- ==================== ACADEMIC DETAILS ==================== -->
+
+<center>
+
+<fieldset style="width:700px;">
+
+    <legend>
+        <b>3. Academic Details</b>
+    </legend>
+
+
+    <table align="center" width="680" cellpadding="8">
+
+
+        <tr>
+
+            <td width="30%">
+                Qualification :
+            </td>
+
+            <td>
+
+                <select
+                    name="qualification"
+                    required
+                >
+
+                    <option value="">
+                        --- Select Qualification ---
+                    </option>
+
+                    <option value="10th">
+                        10th
+                    </option>
+
+                    <option value="12th">
+                        12th
+                    </option>
+
+                    <option value="Graduation">
+                        Graduation
+                    </option>
+
+                    <option value="Post Graduation">
+                        Post Graduation
+                    </option>
+
+                </select>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Passing Year :
+            </td>
+
+            <td>
+
+                <input
+                    type="number"
+                    name="passing_year"
+                    placeholder="Enter passing year"
+                    size="45"
+                    required
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                School / College :
+            </td>
+
+            <td>
+
+                <input
+                    type="text"
+                    name="institute"
+                    placeholder="Enter school or college name"
+                    size="45"
+                >
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Computer Knowledge :
+            </td>
+
+            <td>
+
+                <input
+                    type="radio"
+                    name="computer_knowledge"
+                    value="Basic"
+                >
+
+                Basic
+
+
+                <input
+                    type="radio"
+                    name="computer_knowledge"
+                    value="Intermediate"
+                >
+
+                Intermediate
+
+
+                <input
+                    type="radio"
+                    name="computer_knowledge"
+                    value="Advanced"
+                >
+
+                Advanced
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Known Technologies :
+            </td>
+
+            <td>
+
+                <input
+                    type="checkbox"
+                    name="technology"
+                    value="HTML"
+                >
+
+                HTML
+
+
+                <input
+                    type="checkbox"
+                    name="technology"
+                    value="CSS"
+                >
+
+                CSS
+
+
+                <input
+                    type="checkbox"
+                    name="technology"
+                    value="JavaScript"
+                >
+
+                JavaScript
+
+
+                <input
+                    type="checkbox"
+                    name="technology"
+                    value="Python"
+                >
+
+                Python
+
+            </td>
+
+        </tr>
+
+
+    </table>
+
+</fieldset>
+
+</center>
+
+
+<br>
+
+
+<!-- ==================== COURSE DETAILS ==================== -->
+
+<center>
+
+<fieldset style="width:700px;">
+
+    <legend>
+        <b>4. Course Details</b>
+    </legend>
+
+
+    <table align="center" width="680" cellpadding="8">
+
+
+        <tr>
+
+            <td width="30%">
+                Select Course :
+            </td>
+
+            <td>
+
+                <select
+                    name="course"
+                    required
+                >
+
+                    <option value="">
+                        -------- Select Your Course --------
+                    </option>
+
+                    <option value="Web Designing">
+                        Web Designing
+                    </option>
+
+                    <option value="Python Programming">
+                        Python Programming
+                    </option>
+
+                    <option value="O Level">
+                        O Level
+                    </option>
+
+                    <option value="Tally">
+                        Tally
+                    </option>
+
+                    <option value="DCA">
+                        DCA
+                    </option>
+
+                </select>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Preferred Batch :
+            </td>
+
+            <td>
+
+                <input
+                    type="radio"
+                    name="batch"
+                    value="Morning"
+                >
+
+                Morning
+
+
+                <input
+                    type="radio"
+                    name="batch"
+                    value="Afternoon"
+                >
+
+                Afternoon
+
+
+                <input
+                    type="radio"
+                    name="batch"
+                    value="Evening"
+                >
+
+                Evening
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Learning Mode :
+            </td>
+
+            <td>
+
+                <input
+                    type="radio"
+                    name="mode"
+                    value="Offline"
+                    checked
+                >
+
+                Offline
+
+
+                <input
+                    type="radio"
+                    name="mode"
+                    value="Online"
+                >
+
+                Online
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Student Photo :
+            </td>
+
+            <td>
+
+                <input
+                    type="file"
+                    name="photo"
+                >
+
+            </td>
+
+        </tr>
+
+
+    </table>
+
+</fieldset>
+
+</center>
+
+
+<br>
+
+
+<!-- ==================== OTHER INFORMATION ==================== -->
+
+<center>
+
+<fieldset style="width:700px;">
+
+    <legend>
+        <b>5. Other Information</b>
+    </legend>
+
+
+    <table align="center" width="680" cellpadding="8">
+
+
+        <tr>
+
+            <td width="30%">
+                Why do you want to
+                join this course?
+            </td>
+
+            <td>
+
+                <textarea
+                    name="reason"
+                    cols="45"
+                    rows="5"
+                    placeholder="Write your reason here..."
+                ></textarea>
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                How did you hear
+                about us?
+            </td>
+
+            <td>
+
+                <select name="reference">
+
+                    <option value="">
+                        --- Select ---
+                    </option>
+
+                    <option value="Friend">
+                        Friend
+                    </option>
+
+                    <option value="Teacher">
+                        Teacher
+                    </option>
+
+                    <option value="YouTube">
+                        YouTube
+                    </option>
+
+                    <option value="Google">
+                        Google
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </td>
+
+        </tr>
+
+
+    </table>
+
+</fieldset>
+
+</center>
+
+
+<br>
+
+
+<!-- ==================== DECLARATION ==================== -->
+
+<center>
+
+<fieldset style="width:700px;">
+
+    <legend>
+        <b>6. Declaration</b>
+    </legend>
+
+
+    <input
+        type="checkbox"
+        name="declaration"
+        value="Accepted"
+        required
+    >
+
+    I hereby declare that all the information
+    provided by me is correct and complete.
+
+
+</fieldset>
+
+</center>
+
+
+<br><br>
+
+
+<!-- ==================== BUTTONS ==================== -->
+
+<center>
+
+    <input 
+        type="submit"
+        value="Submit Form"
+        style="background-color: blue; color: white; padding: 8px;"
+    >
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+
+    <input 
+        type="reset"
+        value="Reset Form"
+        style="background-color: red; color: white; padding: 8px;"
+    >
+
+</center>
+
+
+<br><br>
+
+
+<!-- ==================== FOOTER ==================== -->
+
+<center>
+
+    <hr>
+
+    <b>Samrat Ashok Computer Institute</b>
+
+    <br>
+
+    Student Admission Portal
+
+    <br><br>
+
+    © 2026 All Rights Reserved
+
+</center>
+
+
+</form>
+
+
+</body>
+
+</html>
