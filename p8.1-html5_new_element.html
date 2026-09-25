@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML5 Example</title>
+  </head>
+
+  <body bgcolor="mistyRose" >
+
+    <div style="width: 600px; background-color: powderblue; margin:auto; padding:20px;">
+        <header>
+        <h1>My HTML5 Website</h1>
+        </header>
+
+        <nav style="text-align: center;">
+            <a href="index.html">Home |</a>
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <section>
+            <h2>About HTML5</h2>
+            <p>HTML5 provides new elements for creating modern web pages.</p>
+        </section>
+
+        <article>
+            <h2>HTML5 Article</h2>
+            <p>
+                Semantic elements describe the purpose of different parts of a web page.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Related Information</h3>
+            <p>HTML5 also supports audio and video.</p>
+        </aside>
+
+        <!-- multimedia elements => audio and video -->
+
+        <!-------------------- audio section -------------------->
+        <h2>Audio</h2>
+        <!-- here src and controls attribute is must but type is optional -->
+        <audio controls autoplay muted>
+            <source src="assets\cat_audio.wav" type="audio/wav">                       
+        </audio>
+        <audio controls muted loop> 
+            <source src="assets\cat_audio.wav">                       
+        </audio>
+
+        <!-- alternate single line syntex -->
+         <audio src="assets\harmonium_audio.wav" controls></audio>  
+
+        <!-------------------- video section -------------------->
+        <h2>Video</h2>
+        <video controls width="600" height="300" autoplay muted loop>
+            <source src="assets\video1.mp4" type="video/mp4" />
+        </video> <br> <br>
+        <video controls width="600" height="300" poster="assets\thumbnail.png">
+            <source src="assets\video2.mp4" type="video/mp4" />
+        </video> <br> <br>  
+
+        <!-- alternate single line syntex -->
+        <video src="assets\video3.mp4" controls width="600" height="300" preload="none"></video>
+        
+    </div>
+
+  </body>
+</html>
