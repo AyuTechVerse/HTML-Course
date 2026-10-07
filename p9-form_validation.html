@@ -32,7 +32,7 @@
         <br /><br />
 
         <!-- use pattern="[0-9]{10}" to get 10 digit number -->
-        <!-- <label for="mobile">Mobile Number:</label>
+        <label for="mobile">Mobile Number:</label>
         <input
           type="text"
           id="mobile"
@@ -40,11 +40,11 @@
           placeholder="Enter phone number"
           pattern="[0-9]{10}"
           required
-        /> -->
+        />
         <br /><br />
 
         <!-- pincode - 6digit -->
-        <!-- <label for="pin">Pin Code:</label>
+        <label for="pin">Pin Code:</label>
         <input
           type="text"
           id="pin"
@@ -52,7 +52,7 @@
           placeholder="Enter pin code"
           pattern="[0-9]{6}"
           required
-        /> -->
+        />
         <br /><br />
 
         <!-- password -->
@@ -69,7 +69,8 @@
 
         <!--  -->
         <label for="volume">Volume:</label>
-        <input type="range" id="volume" name="volume" min="0" max="100" />
+        <input type="range" id="volume" name="volume" min="0" max="100" step="20"/>
+        <br /><br />
 
         <input type="submit" value="Register" />
       </form>
